@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.login-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(247, 245, 245, 0.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.login-box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #929292;
+  text-align: center;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #929292;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #929292;
+  outline: none;
+  background: transparent;
+}
+.login-box .user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #929292;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #1a3700;
+  font-size: 12px;
+}
+
+button {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #116cf3;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  margin-top: 40px;
+  letter-spacing: 4px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: #f8f8f8;
+  color: rgb(87, 78, 78);
+  border: none;
+  box-shadow: 0 0 5px #d9d8d8, 0 0 5px #e0dede, 0 0 5px #e3e2e2, 0 0 5px #ebebeb;
+}
